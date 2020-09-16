@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Document</title>
+  </head>
+  <body>
+    <app-bar></app-bar>
+    <div class="search-container">
+      <img
+        class="search-cover"
+        src="../src/assets/img/dan-gold-E6HjQaB7UEA-unsplash.jpg"
+        alt="search background"
+      />
+      <div class="search-wrapper">
+        <span class="search-logo">DishesRest</span>
+        <span class="search-description"
+          >The best way to find restaurants in Jakarta</span
+        >
+        <form class="search mt-3">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="search-button"
+              >
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-search"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <input
+              class="form-control"
+              id="search-restaurant"
+              placeholder="Search for restaurants, dist ..."
+              aria-label="Example text with button addon"
+              aria-describedby="button-addon1"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <main>
+      <section class="container mt-4">
+        <span class="choose-text d-block">Trending this week</span
+        ><trending-list></trending-list>
+      </section>
+    </main>
+    <script src="index.bundle.js"></script>
+  </body>
+</html>
