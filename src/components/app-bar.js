@@ -31,7 +31,7 @@ class AppBar extends HTMLElement {
                 </li>
              
             </ul>
-            <span class="explore"><a href="/category.html">Explore Restaurants</a></span>
+            <span class="explore"><a href="/category.html">Explore</a></span>
             </nav>
             
         </header>

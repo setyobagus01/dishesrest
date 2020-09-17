@@ -143,7 +143,7 @@ button {
 
 .search .input-group-prepend {
   border: none;
-  width: 10%;
+  width: 17%;
 }
 
 .search input {
@@ -191,6 +191,10 @@ dropdown-menu {
   align-items: center;
   transform: translateY(10px);
   transition: all 0.2s ease;
+}
+
+dropdown-items {
+  white-space: nowrap;
 }
 
 trending-list {
@@ -468,8 +472,8 @@ cuisines-list {
 @media screen and (max-width: 420px) {
   dropdown-menu {
     overflow: auto;
-    white-space: no-wrap;
-    height: 10vh;
+    white-space: nowrap;
+    height: 7vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -478,11 +482,15 @@ cuisines-list {
   dropdown-menu a {
     width: 60%;
     font-size: 0.7rem;
-    padding: 2rem 3rem;
+    padding: 0 3rem;
+  }
+
+  .details-container img {
+    height: auto;
   }
 
   .search-wrapper {
-    width: 80%;
+    width: 90%;
   }
 
   .container {
@@ -495,5 +503,53 @@ cuisines-list {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .details-container {
+    width: 100%;
+  }
+
+  .details-restaurant {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .details-left .details-name,
+  .details-cost,
+  .details-hours {
+    font-size: 0.9rem;
+  }
+
+  .details-right {
+    justify-content: unset;
+    flex-direction: column;
+  }
+
+  .details-right .rating-text,
+  .votes-text {
+    font-size: 1rem;
+  }
+
+  .details-cuisines,
+  .details-info,
+  .details-contact {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .name-info {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .cuisines .cuisines-name {
+    width: auto;
+    padding: 1rem;
+  }
+
+  .info-list {
+    width: 100%;
+    font-weight: 300;
   }
 }

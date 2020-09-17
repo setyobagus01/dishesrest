@@ -5,11 +5,13 @@ class RestaurantDetail extends HTMLElement {
   }
 
   render() {
-    let moreInfo = this._restaurant.highlights;
-
+    let moreInfo;
     let moreInfo2 = this._restaurant.highlights;
+    console.log(moreInfo2.length);
     moreInfo = moreInfo2.splice(0, 10);
-    moreInfo2.splice(5, 1);
+
+    console.log(moreInfo);
+    console.log(moreInfo2);
 
     let cuisineInfo = this._restaurant.cuisines;
     let cuisineArray = cuisineInfo.split(", ");
